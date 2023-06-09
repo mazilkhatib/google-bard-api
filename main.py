@@ -7,8 +7,11 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
+    "https://name-meaning-finder.vercel.app",
+    "http://name-meaning-finder.vercel.app",
+    "https://name-meaning-finder-git-master-mazilkhatib001-gmailcom.vercel.app",
+    "http://name-meaning-finder-git-master-mazilkhatib001-gmailcom.vercel.app",
     "http://localhost:3000",
-    "https://name-meaning-finder.vercel.app/"
 ]
 
 app.add_middleware(
